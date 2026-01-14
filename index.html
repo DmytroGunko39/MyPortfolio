@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dmytro Gunko · Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" id="top">
+        <a class="brand-name" href="#hero">Dmytro Gunko</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Tech</a>
+          <a href="#projects">Projects</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact" class="pill">Work together</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+          <span class="theme-toggle__label">Light mode</span>
+        </button>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span class="nav-icon" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <nav id="mobile-menu" class="mobile-menu" aria-hidden="true">
+        <div class="mobile-menu__inner">
+          <button
+            class="menu-close"
+            type="button"
+            aria-label="Close navigation"
+          >
+            <span aria-hidden="true"></span>
+          </button>
+          <div class="mobile-menu__links" role="menu">
+            <a href="#hero" role="menuitem">Home</a>
+            <a href="#about" role="menuitem">About</a>
+            <a href="#skills" role="menuitem">Tech</a>
+            <a href="#projects" role="menuitem">Projects</a>
+            <a href="#benefits" role="menuitem">Benefits</a>
+            <a href="#faq" role="menuitem">FAQ</a>
+            <a href="#contact" class="pill" role="menuitem">Work together</a>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        <section id="hero" class="section hero">
+          <div class="hero-content">
+            <p class="eyebrow">Product Engineer · FullStack Specialist</p>
+            <h1>
+              Crafting immersive digital products with precision and warmth.
+            </h1>
+            <p class="lede">
+              I help growing companies translate bold visions into polished web
+              experiences that feel effortless to use and delightful to revisit.
+            </p>
+            <div class="cta-group">
+              <a href="#projects" class="cta primary">View featured work</a>
+              <a href="#contact" class="cta ghost">Start a project</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="orbit">
+              <span class="orbit-piece"></span>
+              <span class="orbit-piece"></span>
+              <span class="orbit-piece"></span>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <span class="metric">1+</span>
+                <span class="meta">Years building web experiences</span>
+              </div>
+              <div>
+                <span class="metric">15</span>
+                <span class="meta">Successful launches shipped</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section about">
+          <div class="section-heading">
+            <h2>About me</h2>
+            <p>
+              I design and build high-impact interfaces that bridge business
+              goals and user needs. With a background in product strategy, I
+              enjoy shaping features end-to-end—from early discovery to final
+              polish.
+            </p>
+          </div>
+          <div class="about-grid">
+            <article class="about-card">
+              <h3>Holistic approach</h3>
+              <p>
+                I partner closely with stakeholders to uncover the core problem,
+                prototype rapidly, and iterate with data-driven insight for
+                measurable outcomes.
+              </p>
+            </article>
+            <article class="about-card">
+              <h3>Design systems</h3>
+              <p>
+                Component-driven architectures bring consistency and scale. I
+                craft modular systems that evolve gracefully with your product.
+              </p>
+            </article>
+            <article class="about-card">
+              <h3>Performance-minded</h3>
+              <p>
+                From accessibility to web vitals, I obsess over experience
+                quality so your product feels fast, inclusive, and trustworthy.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="skills" class="section skills">
+          <div class="section-heading">
+            <h2>Tech skills</h2>
+            <p>Tools I rely on to bring ambitious ideas to life.</p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <span class="tag">Frontend</span>
+              <h3>React, Next.js, Vite</h3>
+              <p>Modern frameworks powering interactive experiences.</p>
+            </div>
+            <div class="skill-card">
+              <span class="tag">Interface</span>
+              <h3>TypeScript, Tailwind, Styled Systems</h3>
+              <p>Type-safe styling and component scalability.</p>
+            </div>
+            <div class="skill-card">
+              <span class="tag">Craft</span>
+              <h3>Figma, Framer, Design Tokens</h3>
+              <p>Rapid prototyping and cohesive design language.</p>
+            </div>
+            <div class="skill-card">
+              <span class="tag">Infra</span>
+              <h3>Node.js, GraphQL, REST</h3>
+              <p>Reliable backbones for data-rich products.</p>
+            </div>
+            <div class="skill-card">
+              <span class="tag">Quality</span>
+              <h3>Jest, Playwright</h3>
+              <p>Automated testing to keep features resilient.</p>
+            </div>
+            <div class="skill-card">
+              <span class="tag">Collaboration</span>
+              <h3>Agile, Product Discovery</h3>
+              <p>Cross-functional rituals that accelerate delivery.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="section projects">
+          <div class="section-heading">
+            <h2>My projects</h2>
+            <p>A snapshot of recent collaborations and flagship builds.</p>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-label">Team Project · Front-End</div>
+              <h3>ArtistsHub</h3>
+              <p>
+                Built a responsive, multi-section landing page in a
+                collaborative team environment, implementing semantic HTML,
+                adaptive layouts, and smooth scrolling interactions. Deployed
+                the project using Git and GitHub Pages.
+              </p>
+              <a
+                href="https://lilianantw.github.io/TwelveTech/"
+                class="text-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View project</a
+              >
+            </article>
+            <article class="project-card">
+              <div class="project-label">Team Project · Full-Stack</div>
+              <h3>Travellers Web Project</h3>
+              <p>
+                Developed a full-stack web application enabling users to create,
+                manage, and share content, featuring authentication, image
+                uploads, and a RESTful API. Built collaboratively using modern
+                JavaScript technologies.
+              </p>
+              <a
+                href="https://front-travellers.vercel.app/"
+                class="text-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View project</a
+              >
+            </article>
+            <article class="project-card">
+              <div class="project-label">SaaS · Activation</div>
+              <h3>OrbitOps Collaboration Suite</h3>
+              <p>
+                Led a design overhaul focused on onboarding flows and shared
+                workspaces, decreasing time to value by 35%.
+              </p>
+              <a href="#" class="text-link">See the highlights</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="benefits" class="section benefits">
+          <div class="section-heading">
+            <h2>Why partner with me</h2>
+            <p>Strategic collaboration that extends beyond aesthetics.</p>
+          </div>
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <h3>Product thinking</h3>
+              <p>
+                Translate business goals into user-centric roadmaps and
+                measurable success metrics.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <h3>Systems mindset</h3>
+              <p>
+                Design reusable patterns that reduce future build time and
+                maintain cohesion.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <h3>Transparent delivery</h3>
+              <p>
+                Clear communication, async updates, and rituals tailored to your
+                team.
+              </p>
+            </article>
+            <article class="benefit-card">
+              <h3>Future-ready</h3>
+              <p>
+                Progressive enhancement, accessibility, and performance baked
+                into every release.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="faq" class="section faq">
+          <div class="section-heading">
+            <h2>FAQ</h2>
+            <p>Answers to common collaboration questions.</p>
+          </div>
+          <div class="faq-list">
+            <article class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                What types of projects do you take on?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer">
+                I partner with startups and product teams on UX overhauls, new
+                feature launches, and design system builds. Engagements range
+                from 6-week sprints to ongoing product stewardship.
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                How soon can we start?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer">
+                I typically book projects 2–3 weeks in advance. Share your
+                timeline and I’ll outline the earliest kickoff window plus a
+                ramp-up plan.
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Do you work with existing teams?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer">
+                Absolutely. I embed with product, design, and engineering teams,
+                aligning roadmaps and contributing wherever momentum is needed
+                most.
+              </div>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                Can you help post-launch?
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer">
+                I often stay on to monitor analytics, run experiments, and
+                ensure new insights fold back into the roadmap.
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section contact">
+          <div class="section-heading">
+            <h2>Work together</h2>
+            <p>
+              Tell me about your product vision—let’s explore how I can help.
+            </p>
+          </div>
+          <form class="contact-form">
+            <div class="field-grid">
+              <label class="field">
+                <span>Name</span>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+              </label>
+              <label class="field">
+                <span>Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="you@company.com"
+                  required
+                />
+              </label>
+            </div>
+            <label class="field">
+              <span>Project vision</span>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Share goals, challenges, and timelines"
+              ></textarea>
+            </label>
+            <label class="field">
+              <span>Budget range</span>
+              <select name="budget">
+                <option value="">Select an option</option>
+                <option value="10-20">$10k – $20k</option>
+                <option value="20-40">$20k – $40k</option>
+                <option value="40+">$40k+</option>
+              </select>
+            </label>
+            <button type="submit" class="cta primary">
+              Request availability
+            </button>
+            <p class="form-meta">
+              I respond to every inquiry within two business days.
+            </p>
+          </form>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <span class="brand-mark">DG</span>
+          <p>Building thoughtful digital products from concept to launch.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:hello@dmytrogunko.com">hello@dmytrogunko.com</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"
+            >LinkedIn</a
+          >
+          <a href="https://github.com" target="_blank" rel="noreferrer"
+            >GitHub</a
+          >
+          <a href="#top">Back to top</a>
+        </div>
+        <p class="footer-meta">
+          © <span id="year"></span> Dmytro Gunko. All rights reserved.
+        </p>
+      </footer>
+    </div>
+    <script src="/script.js" defer></script>
+  </body>
+</html>
