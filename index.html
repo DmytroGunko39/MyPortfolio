@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -22,7 +22,6 @@
           <a href="#skills">Tech</a>
           <a href="#projects">Projects</a>
           <a href="#benefits">Benefits</a>
-          <a href="#faq">FAQ</a>
           <a href="#contact" class="pill">Work together</a>
         </nav>
         <button class="theme-toggle" type="button" aria-pressed="false">
@@ -55,7 +54,6 @@
             <a href="#skills" role="menuitem">Tech</a>
             <a href="#projects" role="menuitem">Projects</a>
             <a href="#benefits" role="menuitem">Benefits</a>
-            <a href="#faq" role="menuitem">FAQ</a>
             <a href="#contact" class="pill" role="menuitem">Work together</a>
           </div>
         </div>
@@ -66,11 +64,11 @@
           <div class="hero-content">
             <p class="eyebrow">Product Engineer · FullStack Specialist</p>
             <h1>
-              Crafting immersive digital products with precision and warmth.
+              Hello, I am FullStack Developer building modern web experiences
             </h1>
             <p class="lede">
-              I help growing companies translate bold visions into polished web
-              experiences that feel effortless to use and delightful to revisit.
+              I'm focused on writing maintainable code and creating intuitive
+              interfaces that users love.
             </p>
             <div class="cta-group">
               <a href="#projects" class="cta primary">View featured work</a>
@@ -226,13 +224,21 @@
               >
             </article>
             <article class="project-card">
-              <div class="project-label">SaaS · Activation</div>
-              <h3>OrbitOps Collaboration Suite</h3>
+              <div class="project-label">Individual Project · Front-End</div>
+              <h3>Image Gallery Project</h3>
               <p>
-                Led a design overhaul focused on onboarding flows and shared
-                workspaces, decreasing time to value by 35%.
+                Developed a responsive image gallery using JavaScript with API
+                integration, pagination, and lightbox viewing. The project
+                focuses on clean UI, asynchronous data fetching, and
+                user-friendly image browsing.
               </p>
-              <a href="#" class="text-link">See the highlights</a>
+              <a
+                href="https://dmytrogunko39.github.io/goit-js-hw-12/"
+                class="text-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View project</a
+              >
             </article>
           </div>
         </section>
@@ -240,99 +246,48 @@
         <section id="benefits" class="section benefits">
           <div class="section-heading">
             <h2>Why partner with me</h2>
-            <p>Strategic collaboration that extends beyond aesthetics.</p>
+            <p>Reliable full-stack development with product awareness.</p>
           </div>
           <div class="benefits-grid">
             <article class="benefit-card">
               <h3>Product thinking</h3>
               <p>
-                Translate business goals into user-centric roadmaps and
-                measurable success metrics.
+                Turning requirements into intuitive interfaces that support real
+                user needs and business goals.
               </p>
             </article>
             <article class="benefit-card">
               <h3>Systems mindset</h3>
               <p>
-                Design reusable patterns that reduce future build time and
-                maintain cohesion.
+                Designing reusable components and clean structures that keep
+                projects scalable and easy to maintain.
               </p>
             </article>
             <article class="benefit-card">
               <h3>Transparent delivery</h3>
               <p>
-                Clear communication, async updates, and rituals tailored to your
-                team.
+                Clear communication, provide regular updates, and adapt smoothly
+                to team workflows.
               </p>
             </article>
             <article class="benefit-card">
               <h3>Future-ready</h3>
               <p>
-                Progressive enhancement, accessibility, and performance baked
-                into every release.
+                Focusing on accessibility, performance, and modern best
+                practices in every project.
               </p>
             </article>
           </div>
         </section>
-
-        <section id="faq" class="section faq">
-          <div class="section-heading">
-            <h2>FAQ</h2>
-            <p>Answers to common collaboration questions.</p>
-          </div>
-          <div class="faq-list">
-            <article class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                What types of projects do you take on?
-                <span class="faq-icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-answer">
-                I partner with startups and product teams on UX overhauls, new
-                feature launches, and design system builds. Engagements range
-                from 6-week sprints to ongoing product stewardship.
-              </div>
-            </article>
-            <article class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                How soon can we start?
-                <span class="faq-icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-answer">
-                I typically book projects 2–3 weeks in advance. Share your
-                timeline and I’ll outline the earliest kickoff window plus a
-                ramp-up plan.
-              </div>
-            </article>
-            <article class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                Do you work with existing teams?
-                <span class="faq-icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-answer">
-                Absolutely. I embed with product, design, and engineering teams,
-                aligning roadmaps and contributing wherever momentum is needed
-                most.
-              </div>
-            </article>
-            <article class="faq-item">
-              <button class="faq-question" aria-expanded="false">
-                Can you help post-launch?
-                <span class="faq-icon" aria-hidden="true"></span>
-              </button>
-              <div class="faq-answer">
-                I often stay on to monitor analytics, run experiments, and
-                ensure new insights fold back into the roadmap.
-              </div>
-            </article>
-          </div>
-        </section>
-
         <section id="contact" class="section contact">
           <div class="section-heading">
-            <h2>Work together</h2>
+            <h2>Get in touch</h2>
             <p>
-              Tell me about your product vision—let’s explore how I can help.
+              Interested in working together or have a question? Feel free to
+              reach out.
             </p>
           </div>
+
           <form class="contact-form">
             <div class="field-grid">
               <label class="field">
@@ -340,43 +295,33 @@
                 <input
                   type="text"
                   name="name"
-                  placeholder="Your full name"
+                  placeholder="Your name"
                   required
                 />
               </label>
+
               <label class="field">
                 <span>Email</span>
                 <input
                   type="email"
                   name="email"
-                  placeholder="you@company.com"
+                  placeholder="your@email.com"
                   required
                 />
               </label>
             </div>
+
             <label class="field">
-              <span>Project vision</span>
+              <span>Message</span>
               <textarea
                 name="message"
                 rows="4"
-                placeholder="Share goals, challenges, and timelines"
+                placeholder="Tell me about the role, team, or opportunity"
+                required
               ></textarea>
             </label>
-            <label class="field">
-              <span>Budget range</span>
-              <select name="budget">
-                <option value="">Select an option</option>
-                <option value="10-20">$10k – $20k</option>
-                <option value="20-40">$20k – $40k</option>
-                <option value="40+">$40k+</option>
-              </select>
-            </label>
-            <button type="submit" class="cta primary">
-              Request availability
-            </button>
-            <p class="form-meta">
-              I respond to every inquiry within two business days.
-            </p>
+
+            <button type="submit" class="cta primary">Send message</button>
           </form>
         </section>
       </main>
@@ -384,17 +329,26 @@
       <footer class="site-footer">
         <div class="footer-brand">
           <span class="brand-mark">DG</span>
-          <p>Building thoughtful digital products from concept to launch.</p>
+          <p>
+            Open to collaboration and junior full-stack opportunities. Let’s
+            build something great.
+          </p>
         </div>
         <div class="footer-links">
-          <a href="mailto:hello@dmytrogunko.com">hello@dmytrogunko.com</a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"
+          <a href="mailto:gunkodmytro39@gmail.com">gunkodmytro39@gmail.com</a>
+          <a
+            href="https://www.linkedin.com/in/dmytro-gunko-128310368/"
+            target="_blank"
+            rel="noreferrer"
             >LinkedIn</a
           >
-          <a href="https://github.com" target="_blank" rel="noreferrer"
+          <a
+            href="https://github.com/DmytroGunko39"
+            target="_blank"
+            rel="noreferrer"
             >GitHub</a
           >
-          <a href="#top">Back to top</a>
+          <a href="#hero">Back to top</a>
         </div>
         <p class="footer-meta">
           © <span id="year"></span> Dmytro Gunko. All rights reserved.
