@@ -158,8 +158,13 @@ html {
 
 body {
   margin: 0;
-  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family:
+    "Space Grotesk",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   background: var(--bg-layer-1), var(--bg-layer-2), var(--bg-base);
   color: var(--color-text);
   min-height: 100vh;
@@ -258,7 +263,9 @@ a:focus {
   border-radius: 999px;
   border: 1px solid var(--color-brand-border);
   background: var(--color-brand-bg);
-  transition: border-color var(--transition), transform var(--transition);
+  transition:
+    border-color var(--transition),
+    transform var(--transition);
   order: 1;
 }
 
@@ -280,7 +287,9 @@ a:focus {
 .site-nav a {
   padding: 8px 14px;
   border-radius: 999px;
-  transition: background var(--transition), color var(--transition);
+  transition:
+    background var(--transition),
+    color var(--transition);
 }
 
 .site-nav a:hover {
@@ -304,7 +313,9 @@ a:focus {
   background: var(--color-control-bg);
   color: inherit;
   cursor: pointer;
-  transition: border-color var(--transition), transform var(--transition),
+  transition:
+    border-color var(--transition),
+    transform var(--transition),
     background var(--transition);
   order: 4;
   margin-left: 12px;
@@ -327,8 +338,11 @@ a:focus {
   color: inherit;
   font: inherit;
   cursor: pointer;
-  transition: border-color var(--transition), transform var(--transition),
-    background var(--transition), box-shadow var(--transition);
+  transition:
+    border-color var(--transition),
+    transform var(--transition),
+    background var(--transition),
+    box-shadow var(--transition);
   order: 3;
   margin-left: 18px;
   box-shadow: var(--shadow-soft);
@@ -366,7 +380,9 @@ a:focus {
   border-radius: 50%;
   background: currentColor;
   translate: 4px 0;
-  transition: translate var(--transition), background var(--transition);
+  transition:
+    translate var(--transition),
+    background var(--transition);
 }
 
 body[data-theme="light"] .theme-toggle__icon::after {
@@ -388,7 +404,9 @@ body[data-theme="light"] .theme-toggle__icon::after {
   background: currentColor;
   border-radius: 999px;
   position: relative;
-  transition: transform var(--transition), opacity var(--transition);
+  transition:
+    transform var(--transition),
+    opacity var(--transition);
 }
 
 .nav-icon::before,
@@ -430,7 +448,9 @@ body[data-theme="light"] .theme-toggle__icon::after {
   opacity: 0;
   pointer-events: none;
   transform: scale(1.02);
-  transition: opacity 260ms ease, transform 260ms ease;
+  transition:
+    opacity 260ms ease,
+    transform 260ms ease;
 }
 
 .mobile-menu__inner {
@@ -556,8 +576,11 @@ body[data-theme="light"] .theme-toggle__icon::after {
   border-radius: 999px;
   font-weight: 600;
   border: 1px solid transparent;
-  transition: transform var(--transition), box-shadow var(--transition),
-    background var(--transition), color var(--transition);
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition),
+    background var(--transition),
+    color var(--transition);
 }
 
 .cta.primary {
@@ -578,6 +601,14 @@ body[data-theme="light"] .theme-toggle__icon::after {
 .cta.ghost:hover {
   border-color: var(--color-control-border-hover);
   color: var(--color-text);
+}
+
+.cta.success {
+  background: #10b981 !important;
+}
+
+.cta.error {
+  background: #ef4444 !important;
 }
 
 .hero-visual {
@@ -698,7 +729,9 @@ body[data-theme="light"] .theme-toggle__icon::after {
   border-radius: var(--radius-md);
   padding: 28px;
   border: 1px solid var(--color-stroke);
-  transition: transform var(--transition), border-color var(--transition);
+  transition:
+    transform var(--transition),
+    border-color var(--transition);
 }
 
 .about-card:hover {
@@ -1041,7 +1074,9 @@ video {
   border-radius: var(--radius-sm);
   border: 1px solid var(--color-image-border);
   box-shadow: var(--shadow-soft);
-  transition: filter var(--transition), box-shadow var(--transition);
+  transition:
+    filter var(--transition),
+    box-shadow var(--transition);
 }
 
 body[data-theme="dark"] img,
