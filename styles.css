@@ -257,11 +257,11 @@ a:focus {
 
 .page-shell {
   width: min(100%, 1340px);
-  padding: 40px clamp(20px, 5vw, 60px) 80px;
+  padding: 40px 20px 80px;
 }
 
 .section {
-  padding: clamp(72px, 16vw, 120px) 0;
+  padding: 72px 0;
   border-bottom: 1px solid var(--color-stroke);
 }
 
@@ -516,19 +516,19 @@ body[data-theme="light"] .theme-toggle__icon::after {
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-mobile-border);
   background: var(--color-mobile-surface);
-  padding: clamp(36px, 12vw, 64px) clamp(28px, 10vw, 52px);
+  padding: 36px 28px;
   box-shadow: var(--shadow-elevate);
   display: grid;
-  gap: clamp(32px, 8vw, 48px);
+  gap: 32px;
 }
 
 .mobile-menu__links {
   display: grid;
-  gap: clamp(18px, 5vw, 28px);
+  gap: 18px;
 }
 
 .mobile-menu__links a {
-  font-size: clamp(1.4rem, 4.6vw, 2rem);
+  font-size: 1.4rem;
   font-family: "Syne", sans-serif;
   letter-spacing: -0.01em;
   padding: 12px 0;
@@ -661,7 +661,7 @@ body[data-theme="light"] .theme-toggle__icon::after {
 }
 
 .hero h1 {
-  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-size: 2.2rem;
   line-height: 1.1;
   margin-bottom: 22px;
 }
@@ -932,6 +932,10 @@ body[data-theme="light"] .theme-toggle__icon::after {
 /* ============================================
 CONTACT SECTION
 ============================================ */
+.no-wrap {
+  white-space: nowrap;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -979,8 +983,8 @@ CONTACT SECTION
 FOOTER
 ============================================ */
 .site-footer {
-  margin-top: clamp(72px, 14vw, 120px);
-  padding: 40px clamp(20px, 5vw, 60px);
+  margin-top: 72px;
+  padding: 40px 20px;
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-stroke);
   background: var(--color-overlay-strong);
@@ -1112,41 +1116,305 @@ ANIMATIONS
 /* ============================================
 RESPONSIVE DESIGN
 ============================================ */
-@media (max-width: 840px) {
-  .site-header {
-    padding: 18px 22px;
+
+/* ===========================================
+   FLUID ZONE: 320px - 360px
+   Elements scale proportionally with viewport
+   =========================================== */
+@media (max-width: 360px) {
+  .page-shell {
+    padding: calc(20px + 2.5vw) calc(10px + 1.25vw) calc(40px + 6.25vw);
   }
-  .site-nav {
-    display: none;
+  .site-header {
+    position: static;
+    padding: calc(8px + 1.25vw) calc(10px + 1.25vw);
+    gap: calc(6px + 1.25vw);
+    border-radius: var(--radius-md);
+  }
+  .brand-name {
+    padding: calc(3px + 0.6vw) calc(8px + 1.25vw);
+    font-size: calc(0.85rem + 0.5vw);
+  }
+  .nav-toggle {
+    width: calc(32px + 1.875vw);
+    height: calc(32px + 1.875vw);
+    margin-left: calc(4px + 0.6vw);
   }
   .theme-toggle {
     margin-left: auto;
-    padding: 10px 14px;
+    padding: calc(5px + 0.6vw) calc(7px + 0.9vw);
     box-shadow: none;
   }
-}
-@media (max-width: 520px) {
-  .site-header {
-    position: static;
-  }
-  .section {
-    padding: 64px 0;
-  }
-  .hero h1 {
-    font-size: clamp(2.3rem, 10vw, 3rem);
-  }
-  .contact-form {
-    padding: 26px;
+  .theme-toggle__icon {
+    width: calc(14px + 1.25vw);
+    height: calc(14px + 1.25vw);
   }
   .theme-toggle__label {
     display: none;
   }
+  .hero h1 {
+    font-size: calc(1.4rem + 1.1vw);
+  }
+  .hero .lede {
+    font-size: calc(0.85rem + 0.5vw);
+  }
+  .hero .eyebrow {
+    font-size: calc(0.6rem + 0.3vw);
+    letter-spacing: 0.2em;
+  }
+  .section {
+    padding: calc(36px + 3.75vw) 0;
+  }
+  .section-heading h2 {
+    font-size: calc(1.25rem + 0.8vw);
+  }
+  .orbit {
+    width: 85%;
+  }
+  .hero-stats {
+    width: 100%;
+  }
+  .hero-stats div {
+    padding: calc(14px + 1.25vw) calc(16px + 1.25vw);
+  }
+  .metric {
+    font-size: calc(1.3rem + 0.9vw);
+  }
+  .about-card,
+  .skill-card,
+  .project-card,
+  .benefit-card {
+    padding: calc(16px + 1.875vw) calc(12px + 1.875vw);
+  }
+  .contact-form {
+    padding: calc(14px + 1.875vw) calc(10px + 1.875vw);
+    gap: calc(14px + 1.875vw);
+  }
+  .field input,
+  .field textarea,
+  .field select {
+    padding: calc(9px + 0.9vw) calc(10px + 1.25vw);
+  }
+  .site-footer {
+    margin-top: 56px;
+    padding: calc(20px + 2.5vw) calc(12px + 1.875vw);
+    border-radius: var(--radius-md);
+  }
+  .footer-brand .brand-mark {
+    width: calc(32px + 1.875vw);
+    height: calc(32px + 1.875vw);
+    font-size: calc(0.85rem + 0.5vw);
+  }
+  .footer-links {
+    font-size: calc(0.8rem + 0.3vw);
+    gap: calc(6px + 0.6vw) calc(10px + 1.25vw);
+  }
+  .mobile-menu__inner {
+    padding: calc(20px + 2.5vw) calc(16px + 1.875vw);
+  }
+  .mobile-menu__links a {
+    font-size: calc(1rem + 0.6vw);
+    padding: calc(8px + 0.6vw) 0;
+  }
+  .mobile-menu__links .pill {
+    padding: calc(9px + 0.9vw) calc(12px + 1.875vw);
+    font-size: calc(0.8rem + 0.3vw);
+  }
+  .menu-close {
+    width: calc(34px + 1.875vw);
+    height: calc(34px + 1.875vw);
+  }
+  .site-nav {
+    display: none;
+  }
+  .hero {
+    gap: 40px;
+  }
+  .about-grid,
+  .skills-grid,
+  .projects-grid,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .footer-meta {
+    text-align: left;
+  }
+  .field-grid {
+    grid-template-columns: 1fr;
+  }
+  .cta {
+    padding: calc(9px + 0.9vw) calc(16px + 1.875vw);
+    font-size: calc(0.85rem + 0.3vw);
+  }
 }
-@media (min-width: 841px) {
+
+/* ===========================================
+   MOBILE: 360px - 767px
+   Fixed values, no scaling
+   =========================================== */
+@media (min-width: 360px) and (max-width: 767px) {
+  .page-shell {
+    padding: 32px 16px 60px;
+  }
+  .site-header {
+    position: static;
+    padding: 14px 16px;
+    gap: 12px;
+  }
+  .site-nav {
+    display: none;
+  }
+  .brand-name {
+    padding: 6px 14px;
+    font-size: 1.1rem;
+  }
+  .nav-toggle {
+    width: 42px;
+    height: 42px;
+    margin-left: 8px;
+  }
+  .theme-toggle {
+    margin-left: auto;
+    padding: 8px 12px;
+    box-shadow: none;
+  }
+  .theme-toggle__label {
+    display: none;
+  }
+  .hero {
+    gap: 48px;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .section {
+    padding: 64px 0;
+  }
+  .about-grid,
+  .skills-grid,
+  .projects-grid,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-form {
+    padding: 24px 20px;
+  }
+  .field-grid {
+    grid-template-columns: 1fr;
+  }
+  .cta {
+    padding: 12px 22px;
+    font-size: 0.95rem;
+  }
+  .site-footer {
+    margin-top: 64px;
+    padding: 32px 20px;
+  }
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .footer-links {
+    gap: 10px 18px;
+  }
+  .footer-meta {
+    text-align: left;
+  }
+  .mobile-menu__inner {
+    padding: 36px 28px;
+  }
+  .mobile-menu__links a {
+    font-size: 1.4rem;
+  }
+}
+
+/* ===========================================
+   TABLET: 768px - 1279px
+   Fixed values, adapted layout
+   =========================================== */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .page-shell {
+    padding: 40px 32px 80px;
+  }
   .nav-toggle {
     display: none;
   }
   .mobile-menu {
     display: none;
+  }
+  .hero {
+    gap: 56px;
+  }
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+  .section {
+    padding: 88px 0;
+  }
+  .about-grid,
+  .skills-grid,
+  .projects-grid,
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-form {
+    padding: 32px;
+  }
+  .site-footer {
+    margin-top: 88px;
+    padding: 40px 32px;
+  }
+  .contact-text {
+    white-space: nowrap;
+  }
+}
+
+/* ===========================================
+   DESKTOP: 1280px+
+   Fixed values, full layout
+   =========================================== */
+@media (min-width: 1280px) {
+  .page-shell {
+    padding: 48px 60px 100px;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .hero {
+    gap: 80px;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+  .section {
+    padding: 120px 0;
+  }
+  .about-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .contact-form {
+    padding: 40px;
+  }
+  .site-footer {
+    margin-top: 120px;
+    padding: 48px 60px;
+  }
+  .contact-text {
+    white-space: nowrap;
   }
 }
