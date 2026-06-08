@@ -256,7 +256,7 @@ a:focus {
    ============================================ */
 
 .page-shell {
-  width: min(100%, 1340px);
+  width: min(100%, 1600px);
   padding: 40px 20px 80px;
 }
 
@@ -307,6 +307,7 @@ a:focus {
   border-radius: 999px;
   border: 1px solid var(--color-brand-border);
   background: var(--color-brand-bg);
+  white-space: nowrap;
   transition:
     border-color var(--transition),
     transform var(--transition);
@@ -391,7 +392,7 @@ a:focus {
 .site-nav {
   display: flex;
   align-items: center;
-  gap: clamp(12px, 2.5vw, 28px);
+  gap: clamp(10px, 1.8vw, 28px);
   font-size: 0.95rem;
   margin-left: auto;
   order: 2;
@@ -400,6 +401,7 @@ a:focus {
 .site-nav a {
   padding: 8px 14px;
   border-radius: 999px;
+  white-space: nowrap;
   transition:
     background var(--transition),
     color var(--transition);
@@ -533,6 +535,7 @@ body[data-theme="light"] .theme-toggle__icon::after {
 .theme-toggle__label {
   font-size: 0.9rem;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 /* ============================================

@@ -13,8 +13,8 @@
       "downloadCvFr": "Download CV FR"
     },
     "theme": {
-      "light": "Light mode",
-      "dark": "Dark mode"
+      "light": "Light",
+      "dark": "Dark"
     },
     "a11y": {
       "toggleNav": "Toggle navigation",
@@ -120,8 +120,8 @@
       "downloadCvFr": "Télécharger le CV FR"
     },
     "theme": {
-      "light": "Mode clair",
-      "dark": "Mode sombre"
+      "light": "Clair",
+      "dark": "Sombre"
     },
     "a11y": {
       "toggleNav": "Basculer la navigation",
