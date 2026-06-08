@@ -37,6 +37,7 @@
               download
               class="brand-dropdown__link"
               role="menuitem"
+              data-i18n="brand.downloadCvEn"
               >Download CV EN</a
             >
             <a
@@ -44,21 +45,35 @@
               download
               class="brand-dropdown__link"
               role="menuitem"
+              data-i18n="brand.downloadCvFr"
               >Download CV FR</a
             >
           </div>
         </div>
         <nav class="site-nav" aria-label="Primary navigation">
-          <a href="#hero">Home</a>
-          <a href="#about">About</a>
-          <a href="#skills">Tech</a>
-          <a href="#projects">Projects</a>
-          <a href="#benefits">Benefits</a>
-          <a href="#contact" class="pill">Work together</a>
+          <a href="#hero" data-i18n="nav.home">Home</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#skills" data-i18n="nav.tech">Tech</a>
+          <a href="#projects" data-i18n="nav.projects">Projects</a>
+          <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
+          <a href="#contact" class="pill" data-i18n="nav.workTogether"
+            >Work together</a
+          >
         </nav>
+        <button
+          class="lang-toggle"
+          type="button"
+          aria-label="Switch language"
+        >
+          <span class="lang-toggle__option" data-lang-option="en">EN</span>
+          <span class="lang-toggle__divider" aria-hidden="true">/</span>
+          <span class="lang-toggle__option" data-lang-option="fr">FR</span>
+        </button>
         <button class="theme-toggle" type="button" aria-pressed="false">
           <span class="theme-toggle__icon" aria-hidden="true"></span>
-          <span class="theme-toggle__label">Light mode</span>
+          <span class="theme-toggle__label" data-i18n="theme.light"
+            >Light mode</span
+          >
         </button>
         <button
           class="nav-toggle"
@@ -66,7 +81,9 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <span class="sr-only">Toggle navigation</span>
+          <span class="sr-only" data-i18n="a11y.toggleNav"
+            >Toggle navigation</span
+          >
           <span class="nav-icon" aria-hidden="true"></span>
         </button>
       </header>
@@ -77,16 +94,27 @@
             class="menu-close"
             type="button"
             aria-label="Close navigation"
+            data-i18n-aria-label="a11y.closeNav"
           >
             <span aria-hidden="true"></span>
           </button>
           <div class="mobile-menu__links" role="menu">
-            <a href="#hero" role="menuitem">Home</a>
-            <a href="#about" role="menuitem">About</a>
-            <a href="#skills" role="menuitem">Tech</a>
-            <a href="#projects" role="menuitem">Projects</a>
-            <a href="#benefits" role="menuitem">Benefits</a>
-            <a href="#contact" class="pill" role="menuitem">Work together</a>
+            <a href="#hero" role="menuitem" data-i18n="nav.home">Home</a>
+            <a href="#about" role="menuitem" data-i18n="nav.about">About</a>
+            <a href="#skills" role="menuitem" data-i18n="nav.tech">Tech</a>
+            <a href="#projects" role="menuitem" data-i18n="nav.projects"
+              >Projects</a
+            >
+            <a href="#benefits" role="menuitem" data-i18n="nav.benefits"
+              >Benefits</a
+            >
+            <a
+              href="#contact"
+              class="pill"
+              role="menuitem"
+              data-i18n="nav.workTogether"
+              >Work together</a
+            >
           </div>
         </div>
       </nav>
@@ -94,17 +122,23 @@
       <main>
         <section id="hero" class="section hero">
           <div class="hero-content">
-            <p class="eyebrow">Product Engineer · FullStack Specialist</p>
-            <h1>
+            <p class="eyebrow" data-i18n="hero.eyebrow">
+              Product Engineer · FullStack Specialist
+            </p>
+            <h1 data-i18n="hero.heading">
               Hello, I am FullStack Developer building modern web experiences
             </h1>
-            <p class="lede">
+            <p class="lede" data-i18n="hero.lede">
               Open to collaboration and junior full-stack opportunities. Let’s
               build something great.
             </p>
             <div class="cta-group">
-              <a href="#projects" class="cta primary">View featured work</a>
-              <a href="#contact" class="cta ghost">Get in touch</a>
+              <a href="#projects" class="cta primary" data-i18n="hero.ctaPrimary"
+                >View featured work</a
+              >
+              <a href="#contact" class="cta ghost" data-i18n="hero.ctaGhost"
+                >Get in touch</a
+              >
             </div>
           </div>
           <div class="hero-visual">
@@ -116,11 +150,15 @@
             <div class="hero-stats">
               <div>
                 <span class="metric">1+</span>
-                <span class="meta">Years building web experiences</span>
+                <span class="meta" data-i18n="hero.statLabel1"
+                  >Years building web experiences</span
+                >
               </div>
               <div>
                 <span class="metric">3+</span>
-                <span class="meta">Successful launches shipped</span>
+                <span class="meta" data-i18n="hero.statLabel2"
+                  >Successful launches shipped</span
+                >
               </div>
             </div>
           </div>
@@ -128,8 +166,8 @@
 
         <section id="about" class="section about">
           <div class="section-heading">
-            <h2>About me</h2>
-            <p>
+            <h2 data-i18n="about.heading">About me</h2>
+            <p data-i18n="about.intro">
               I build thoughtful interfaces that connect user needs with
               business goals. I enjoy working on features from early discovery
               to final polish, writing clean, maintainable code, and creating
@@ -138,24 +176,24 @@
           </div>
           <div class="about-grid">
             <article class="about-card">
-              <h3>Holistic approach</h3>
-              <p>
+              <h3 data-i18n="about.card1Title">Holistic approach</h3>
+              <p data-i18n="about.card1Text">
                 I partner closely with others to uncover core problems,
                 prototype quickly, and iterate using feedback and data to
                 improve outcomes.
               </p>
             </article>
             <article class="about-card">
-              <h3>Design systems</h3>
-              <p>
+              <h3 data-i18n="about.card2Title">Design systems</h3>
+              <p data-i18n="about.card2Text">
                 Component-driven approaches help create consistency and scale. I
                 enjoy building modular UI patterns that can grow and adapt as a
                 product evolves.
               </p>
             </article>
             <article class="about-card">
-              <h3>Performance-minded</h3>
-              <p>
+              <h3 data-i18n="about.card3Title">Performance-minded</h3>
+              <p data-i18n="about.card3Text">
                 From accessibility to web vitals, I care deeply about experience
                 quality, aiming to build interfaces that feel fast, inclusive,
                 and reliable.
@@ -166,48 +204,70 @@
 
         <section id="skills" class="section skills">
           <div class="section-heading">
-            <h2>Tech skills</h2>
-            <p>Tools I rely on to bring ambitious ideas to life.</p>
+            <h2 data-i18n="skills.heading">Tech skills</h2>
+            <p data-i18n="skills.intro">
+              Tools I rely on to bring ambitious ideas to life.
+            </p>
           </div>
           <div class="skills-grid">
             <div class="skill-card">
-              <span class="tag">Frontend</span>
-              <h3>HTML, CSS, JavaScript (ES6+),React, Next.js, Vite</h3>
-              <p>
+              <span class="tag" data-i18n="skills.card1Tag">Frontend</span>
+              <h3 data-i18n="skills.card1Title">
+                HTML, CSS, JavaScript (ES6+),React, Next.js, Vite
+              </h3>
+              <p data-i18n="skills.card1Text">
                 Building responsive, interactive user interfaces with modern
                 tooling.
               </p>
             </div>
             <div class="skill-card">
-              <span class="tag">Interface & Styling</span>
-              <h3>TypeScript, Tailwind CSS, CSS Modules</h3>
-              <p>Type-safe components and scalable styling patterns.</p>
+              <span class="tag" data-i18n="skills.card2Tag"
+                >Interface & Styling</span
+              >
+              <h3 data-i18n="skills.card2Title">
+                TypeScript, Tailwind CSS, CSS Modules
+              </h3>
+              <p data-i18n="skills.card2Text">
+                Type-safe components and scalable styling patterns.
+              </p>
             </div>
             <div class="skill-card">
-              <span class="tag">Design & Prototyping</span>
-              <h3>Figma</h3>
-              <p>
+              <span class="tag" data-i18n="skills.card3Tag"
+                >Design & Prototyping</span
+              >
+              <h3 data-i18n="skills.card3Title">Figma</h3>
+              <p data-i18n="skills.card3Text">
                 Rapid prototyping and close alignment between design and
                 implementation.
               </p>
             </div>
             <div class="skill-card">
-              <span class="tag">Backend / APIs</span>
-              <h3>Node.js, REST APIs, MongoDB</h3>
-              <p>Consuming and building APIs for data-driven features.</p>
+              <span class="tag" data-i18n="skills.card4Tag"
+                >Backend / APIs</span
+              >
+              <h3 data-i18n="skills.card4Title">
+                Node.js, REST APIs, MongoDB
+              </h3>
+              <p data-i18n="skills.card4Text">
+                Consuming and building APIs for data-driven features.
+              </p>
             </div>
             <div class="skill-card">
-              <span class="tag">Tooling & Workflow</span>
-              <h3>Git, GitHub, CI/CD</h3>
-              <p>
+              <span class="tag" data-i18n="skills.card5Tag"
+                >Tooling & Workflow</span
+              >
+              <h3 data-i18n="skills.card5Title">Git, GitHub, CI/CD</h3>
+              <p data-i18n="skills.card5Text">
                 Version control, pull requests, and basic automated workflows to
                 support reliable development.
               </p>
             </div>
             <div class="skill-card">
-              <span class="tag">Collaboration</span>
-              <h3>Agile practices, Product Discovery</h3>
-              <p>
+              <span class="tag" data-i18n="skills.card6Tag">Collaboration</span>
+              <h3 data-i18n="skills.card6Title">
+                Agile practices, Product Discovery
+              </h3>
+              <p data-i18n="skills.card6Text">
                 Working in cross-functional teams through iterative development.
               </p>
             </div>
@@ -216,17 +276,19 @@
 
         <section id="projects" class="section projects">
           <div class="section-heading">
-            <h2>My projects</h2>
-            <p>
+            <h2 data-i18n="projects.heading">My projects</h2>
+            <p data-i18n="projects.intro">
               Projects showcasing my experience with modern full-stack
               technologies.
             </p>
           </div>
           <div class="projects-grid">
             <article class="project-card">
-              <div class="project-label">Team Project · Front-End</div>
+              <div class="project-label" data-i18n="projects.card1Label">
+                Team Project · Front-End
+              </div>
               <h3>ArtistsHub</h3>
-              <p>
+              <p data-i18n="projects.card1Text">
                 Built a responsive, multi-section landing page in a
                 collaborative team environment, implementing semantic HTML,
                 adaptive layouts, and smooth scrolling interactions. Deployed
@@ -237,13 +299,16 @@
                 class="text-link"
                 target="_blank"
                 rel="noopener noreferrer"
+                data-i18n="projects.viewProject"
                 >View project</a
               >
             </article>
             <article class="project-card">
-              <div class="project-label">Individual Project · Front-End</div>
+              <div class="project-label" data-i18n="projects.card2Label">
+                Individual Project · Front-End
+              </div>
               <h3>RentalCar — Premium Car Rental Service</h3>
-              <p>
+              <p data-i18n="projects.card2Text">
                 A modern full-stack car rental application built with Next.js
                 16, TypeScript, Tailwind CSS, Zustand, and Formik. Users can
                 browse cars, filter by multiple parameters, view detailed
@@ -255,13 +320,16 @@
                 class="text-link"
                 target="_blank"
                 rel="noopener noreferrer"
+                data-i18n="projects.viewProject"
                 >View project</a
               >
             </article>
             <article class="project-card">
-              <div class="project-label">Team Project · Full-Stack</div>
+              <div class="project-label" data-i18n="projects.card3Label">
+                Team Project · Full-Stack
+              </div>
               <h3>Travellers Web Project</h3>
-              <p>
+              <p data-i18n="projects.card3Text">
                 Developed a full-stack web application enabling users to create,
                 manage, and share content, featuring authentication, image
                 uploads, and a RESTful API. Built collaboratively using modern
@@ -272,14 +340,17 @@
                 class="text-link"
                 target="_blank"
                 rel="noopener noreferrer"
+                data-i18n="projects.viewProject"
               >
                 View project</a
               >
             </article>
             <article class="project-card">
-              <div class="project-label">Individual Project · Full-Stack</div>
+              <div class="project-label" data-i18n="projects.card4Label">
+                Individual Project · Full-Stack
+              </div>
               <h3>NoteHub</h3>
-              <p>
+              <p data-i18n="projects.card4Text">
                 Full-stack note-taking app with authentication, tag filtering,
                 search, and pagination. Built with Next.js 15 App Router, React
                 19, TypeScript, Zustand, TanStack Query, and CSS Modules.
@@ -291,12 +362,18 @@
                 class="text-link"
                 target="_blank"
                 rel="noopener noreferrer"
+                data-i18n="projects.viewProject"
                 >View project</a
               >
             </article>
           </div>
           <div class="projects-more">
-            <button type="button" class="cta primary" id="projects-more-btn">
+            <button
+              type="button"
+              class="cta primary"
+              id="projects-more-btn"
+              data-i18n="projects.more"
+            >
               More Projects
             </button>
           </div>
@@ -304,34 +381,36 @@
 
         <section id="benefits" class="section benefits">
           <div class="section-heading">
-            <h2>Why partner with me</h2>
-            <p>Reliable full-stack development with product awareness.</p>
+            <h2 data-i18n="benefits.heading">Why partner with me</h2>
+            <p data-i18n="benefits.intro">
+              Reliable full-stack development with product awareness.
+            </p>
           </div>
           <div class="benefits-grid">
             <article class="benefit-card">
-              <h3>Product thinking</h3>
-              <p>
+              <h3 data-i18n="benefits.card1Title">Product thinking</h3>
+              <p data-i18n="benefits.card1Text">
                 Turning requirements into intuitive interfaces that support real
                 user needs and business goals.
               </p>
             </article>
             <article class="benefit-card">
-              <h3>Systems mindset</h3>
-              <p>
+              <h3 data-i18n="benefits.card2Title">Systems mindset</h3>
+              <p data-i18n="benefits.card2Text">
                 Designing reusable components and clean structures that keep
                 projects scalable and easy to maintain.
               </p>
             </article>
             <article class="benefit-card">
-              <h3>Transparent delivery</h3>
-              <p>
+              <h3 data-i18n="benefits.card3Title">Transparent delivery</h3>
+              <p data-i18n="benefits.card3Text">
                 Clear communication, provide regular updates, and adapt smoothly
                 to team workflows.
               </p>
             </article>
             <article class="benefit-card">
-              <h3>Future-ready</h3>
-              <p>
+              <h3 data-i18n="benefits.card4Title">Future-ready</h3>
+              <p data-i18n="benefits.card4Text">
                 Focusing on accessibility, performance, and modern best
                 practices in every project.
               </p>
@@ -340,10 +419,12 @@
         </section>
         <section id="contact" class="section contact">
           <div class="section-heading">
-            <h2>Get in touch</h2>
+            <h2 data-i18n="contact.heading">Get in touch</h2>
             <p class="contact-text">
-              Interested in working together or have a question? Feel free to
-              reach out or download my CV -
+              <span data-i18n="contact.intro"
+                >Interested in working together or have a question? Feel free
+                to reach out or download my CV -</span
+              >
               <a
                 href="/Dmytro_Gunko_Fullstack_Developer_EN.pdf"
                 download
@@ -367,37 +448,42 @@
           >
             <div class="field-grid">
               <label class="field">
-                <span>Name</span>
+                <span data-i18n="contact.fieldName">Name</span>
                 <input
                   type="text"
                   name="name"
                   placeholder="Your name"
+                  data-i18n-placeholder="contact.placeholderName"
                   required
                 />
               </label>
 
               <label class="field">
-                <span>Email</span>
+                <span data-i18n="contact.fieldEmail">Email</span>
                 <input
                   type="email"
                   name="email"
                   placeholder="your@email.com"
+                  data-i18n-placeholder="contact.placeholderEmail"
                   required
                 />
               </label>
             </div>
 
             <label class="field">
-              <span>Message</span>
+              <span data-i18n="contact.fieldMessage">Message</span>
               <textarea
                 name="message"
                 rows="4"
                 placeholder="Tell me about the role, team, or opportunity"
+                data-i18n-placeholder="contact.placeholderMessage"
                 required
               ></textarea>
             </label>
 
-            <button type="submit" class="cta primary">Send message</button>
+            <button type="submit" class="cta primary" data-i18n="contact.send">
+              Send message
+            </button>
           </form>
         </section>
       </main>
@@ -422,15 +508,17 @@
               rel="noreferrer"
               >GitHub</a
             >
-            <a href="#hero">Back to top</a>
+            <a href="#hero" data-i18n="footer.backToTop">Back to top</a>
           </address>
         </div>
         <p class="footer-meta">
-          © <span id="year"></span> Dmytro Gunko. All rights reserved.
+          © <span id="year"></span> Dmytro Gunko.
+          <span data-i18n="footer.rights">All rights reserved.</span>
         </p>
       </footer>
     </div>
     <script src="/script.js" defer></script>
+    <script src="/main.js" defer></script>
     <script src="contact.js" defer></script>
   </body>
 </html>
