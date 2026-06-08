@@ -597,6 +597,10 @@ body[data-theme="light"] .theme-toggle__icon::after {
   gap: 14px;
 }
 
+.cta[hidden] {
+  display: none;
+}
+
 .cta {
   display: inline-flex;
   align-items: center;
@@ -605,6 +609,7 @@ body[data-theme="light"] .theme-toggle__icon::after {
   border-radius: 999px;
   font-weight: 600;
   border: 1px solid transparent;
+  cursor: pointer;
   transition:
     transform var(--transition),
     box-shadow var(--transition),
@@ -871,11 +876,21 @@ body[data-theme="light"] .theme-toggle__icon::after {
   gap: 14px;
 }
 
+.project-card.is-hidden {
+  display: none;
+}
+
 .project-label {
   color: var(--color-text-muted);
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.projects-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
 }
 
 .text-link {

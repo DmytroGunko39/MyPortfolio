@@ -96,6 +96,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  const projectCards = document.querySelectorAll(".project-card");
+  const moreProjectsBtn = document.getElementById("projects-more-btn");
+  const PROJECTS_PER_REVEAL = 3;
+  let visibleProjectsCount = PROJECTS_PER_REVEAL;
+
+  const updateProjectsVisibility = () => {
+    projectCards.forEach((card, index) => {
+      card.classList.toggle("is-hidden", index >= visibleProjectsCount);
+    });
+
+    if (moreProjectsBtn) {
+      moreProjectsBtn.hidden = visibleProjectsCount >= projectCards.length;
+    }
+  };
+
+  updateProjectsVisibility();
+
+  moreProjectsBtn?.addEventListener("click", () => {
+    visibleProjectsCount += PROJECTS_PER_REVEAL;
+    updateProjectsVisibility();
+  });
+
   const faqItems = document.querySelectorAll(".faq-item");
 
   faqItems.forEach((item) => {
