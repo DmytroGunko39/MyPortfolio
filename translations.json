@@ -72,6 +72,8 @@
       "card3Text": "Developed a full-stack web application enabling users to create, manage, and share content, featuring authentication, image uploads, and a RESTful API. Built collaboratively using modern JavaScript technologies.",
       "card4Label": "Individual Project · Full-Stack",
       "card4Text": "Full-stack note-taking app with authentication, tag filtering, search, and pagination. Built with Next.js 15 App Router, React 19, TypeScript, Zustand, TanStack Query, and CSS Modules. Features a BFF proxy pattern, intercepted modals, and a custom dark UI. Deployed on Vercel.",
+      "card5Label": "Solo Project · Full-Stack",
+      "card5Text": "Built a full-featured language tutoring platform where users can browse and filter teachers by language, level, and price, save favorites, and book trial lessons. Implemented Firebase Authentication and Realtime Database, private routes, pagination, and a fully responsive layout across all screen sizes.",
       "viewProject": "View project",
       "more": "More Projects"
     },
@@ -179,6 +181,8 @@
       "card3Text": "Développement d’une application web full-stack permettant aux utilisateurs de créer, gérer et partager du contenu, avec authentification, téléversement d’images et une API RESTful. Construit en équipe avec des technologies JavaScript modernes.",
       "card4Label": "Projet individuel · Full-Stack",
       "card4Text": "Application full-stack de prise de notes avec authentification, filtrage par tags, recherche et pagination. Construite avec Next.js 15 App Router, React 19, TypeScript, Zustand, TanStack Query et CSS Modules. Comprend un proxy BFF, des modales interceptées et une interface sombre personnalisée. Déployée sur Vercel.",
+      "card5Label": "Projet solo · Full-Stack",
+      "card5Text": "Développement d'une plateforme complète de cours de langues où les utilisateurs peuvent parcourir et filtrer les professeurs par langue, niveau et prix, enregistrer leurs favoris et réserver des cours d'essai. Implémentation de l'authentification Firebase et de la Realtime Database, de routes privées, de la pagination et d'une mise en page entièrement responsive sur tous les écrans.",
       "viewProject": "Voir le projet",
       "more": "Plus de projets"
     },

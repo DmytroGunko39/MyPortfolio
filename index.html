@@ -60,11 +60,7 @@
             >Work together</a
           >
         </nav>
-        <button
-          class="lang-toggle"
-          type="button"
-          aria-label="Switch language"
-        >
+        <button class="lang-toggle" type="button" aria-label="Switch language">
           <span class="lang-toggle__option" data-lang-option="en">EN</span>
           <span class="lang-toggle__divider" aria-hidden="true">/</span>
           <span class="lang-toggle__option" data-lang-option="fr">FR</span>
@@ -133,7 +129,10 @@
               build something great.
             </p>
             <div class="cta-group">
-              <a href="#projects" class="cta primary" data-i18n="hero.ctaPrimary"
+              <a
+                href="#projects"
+                class="cta primary"
+                data-i18n="hero.ctaPrimary"
                 >View featured work</a
               >
               <a href="#contact" class="cta ghost" data-i18n="hero.ctaGhost"
@@ -245,9 +244,7 @@
               <span class="tag" data-i18n="skills.card4Tag"
                 >Backend / APIs</span
               >
-              <h3 data-i18n="skills.card4Title">
-                Node.js, REST APIs, MongoDB
-              </h3>
+              <h3 data-i18n="skills.card4Title">Node.js, REST APIs, MongoDB</h3>
               <p data-i18n="skills.card4Text">
                 Consuming and building APIs for data-driven features.
               </p>
@@ -283,6 +280,28 @@
             </p>
           </div>
           <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-label" data-i18n="projects.card5Label">
+                Solo Project · Full-Stack
+              </div>
+              <h3>LearnLingo</h3>
+              <p data-i18n="projects.card5Text">
+                Built a full-featured language tutoring platform where users can
+                browse and filter teachers by language, level, and price, save
+                favorites, and book trial lessons. Implemented Firebase
+                Authentication and Realtime Database, private routes,
+                pagination, and a fully responsive layout across all screen
+                sizes.
+              </p>
+              <a
+                href="https://learn-lingo-app-tawny.vercel.app/"
+                class="text-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-i18n="projects.viewProject"
+                >View project</a
+              >
+            </article>
             <article class="project-card">
               <div class="project-label" data-i18n="projects.card1Label">
                 Team Project · Front-End
@@ -422,8 +441,8 @@
             <h2 data-i18n="contact.heading">Get in touch</h2>
             <p class="contact-text">
               <span data-i18n="contact.intro"
-                >Interested in working together or have a question? Feel free
-                to reach out or download my CV -</span
+                >Interested in working together or have a question? Feel free to
+                reach out or download my CV -</span
               >
               <a
                 href="/Dmytro_Gunko_Fullstack_Developer_EN.pdf"
