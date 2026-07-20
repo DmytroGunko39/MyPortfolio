@@ -10,7 +10,8 @@
     },
     "brand": {
       "downloadCvEn": "Download CV EN",
-      "downloadCvFr": "Download CV FR"
+      "downloadCvFr": "Download CV FR",
+      "downloadCvEnATS": "Download CV ATS"
     },
     "theme": {
       "light": "Light",
