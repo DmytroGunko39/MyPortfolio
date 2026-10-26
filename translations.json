@@ -75,6 +75,8 @@
       "card4Text": "Full-stack note-taking app with authentication, tag filtering, search, and pagination. Built with Next.js 15 App Router, React 19, TypeScript, Zustand, TanStack Query, and CSS Modules. Features a BFF proxy pattern, intercepted modals, and a custom dark UI. Deployed on Vercel.",
       "card5Label": "Individual Project · Full-Stack",
       "card5Text": "Built a full-featured language tutoring platform where users can browse and filter teachers by language, level, and price, save favorites, and book trial lessons. Implemented Firebase Authentication and Realtime Database, private routes, pagination, and a fully responsive layout across all screen sizes.",
+      "card6Label": "Individual Project · Full-Stack",
+      "card6Text": "A full-stack website for two French motorsport organisations: Rallycross de Dreux, an event drawing up to 18–19k spectators over a weekend, and ASA Beauce. Built with Next.js 16, TypeScript, Tailwind CSS and Sanity, it brings two visual identities into one project, with news (photo gallery and video), ticketing and PDF documents managed from the CMS, so the client stays fully autonomous.",
       "viewProject": "View project",
       "more": "More Projects"
     },
@@ -184,6 +186,8 @@
       "card4Text": "Application full-stack de prise de notes avec authentification, filtrage par tags, recherche et pagination. Construite avec Next.js 15 App Router, React 19, TypeScript, Zustand, TanStack Query et CSS Modules. Comprend un proxy BFF, des modales interceptées et une interface sombre personnalisée. Déployée sur Vercel.",
       "card5Label": "Projet individuel · Full-Stack",
       "card5Text": "Développement d'une plateforme complète de cours de langues où les utilisateurs peuvent parcourir et filtrer les professeurs par langue, niveau et prix, enregistrer leurs favoris et réserver des cours d'essai. Implémentation de l'authentification Firebase et de la Realtime Database, de routes privées, de la pagination et d'une mise en page entièrement responsive sur tous les écrans.",
+      "card6Label": "Projet individuel · Full-Stack",
+      "card6Text": "Site web full-stack pour deux organisations de sport automobile françaises : le Rallycross de Dreux, événement accueillant jusqu’à 18-19 000 spectateurs sur un week-end, et l’ASA Beauce. Construit avec Next.js 16, TypeScript, Tailwind CSS et Sanity, il réunit deux identités visuelles dans un seul projet, avec actualités (galerie photo et vidéo), billetterie et documents PDF gérés depuis le CMS, pour une autonomie totale du client.",
       "viewProject": "Voir le projet",
       "more": "Plus de projets"
     },
