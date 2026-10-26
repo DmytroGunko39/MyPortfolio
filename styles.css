@@ -1022,6 +1022,32 @@ body[data-theme="light"] .theme-toggle__icon::after {
   text-decoration: underline;
 }
 
+.project-card__footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+
+.project-card__code {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.project-card__code:hover,
+.project-card__code:focus-visible {
+  color: var(--color-accent);
+}
+
+.project-card__code-icon {
+  flex-shrink: 0;
+}
+
 /* ============================================
    BENEFITS SECTION
    ============================================ */

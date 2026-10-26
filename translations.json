@@ -78,6 +78,12 @@
       "card6Label": "Individual Project · Full-Stack",
       "card6Text": "A full-stack website for two French motorsport organisations: Rallycross de Dreux, an event drawing up to 18–19k spectators over a weekend, and ASA Beauce. Built with Next.js 16, TypeScript, Tailwind CSS and Sanity, it brings two visual identities into one project, with news (photo gallery and video), ticketing and PDF documents managed from the CMS, so the client stays fully autonomous.",
       "viewProject": "View project",
+      "code": "Code",
+      "card1CodeAria": "Source code of ArtistsHub on GitHub",
+      "card2CodeAria": "Source code of RentalCar — Premium Car Rental Service on GitHub",
+      "card3CodeAria": "Source code of Travellers Web Project on GitHub",
+      "card4CodeAria": "Source code of NoteHub on GitHub",
+      "card5CodeAria": "Source code of LearnLingo on GitHub",
       "more": "More Projects"
     },
     "benefits": {
@@ -189,6 +195,12 @@
       "card6Label": "Projet individuel · Full-Stack",
       "card6Text": "Site web full-stack pour deux organisations de sport automobile françaises : le Rallycross de Dreux, événement accueillant jusqu’à 18-19 000 spectateurs sur un week-end, et l’ASA Beauce. Construit avec Next.js 16, TypeScript, Tailwind CSS et Sanity, il réunit deux identités visuelles dans un seul projet, avec actualités (galerie photo et vidéo), billetterie et documents PDF gérés depuis le CMS, pour une autonomie totale du client.",
       "viewProject": "Voir le projet",
+      "code": "Code source",
+      "card1CodeAria": "Code source de ArtistsHub sur GitHub",
+      "card2CodeAria": "Code source de RentalCar — Premium Car Rental Service sur GitHub",
+      "card3CodeAria": "Code source de Travellers Web Project sur GitHub",
+      "card4CodeAria": "Code source de NoteHub sur GitHub",
+      "card5CodeAria": "Code source de LearnLingo sur GitHub",
       "more": "Plus de projets"
     },
     "benefits": {
